@@ -1,0 +1,29 @@
+li a {
+    display: block;
+    width: 90px;
+    color: red;
+    padding: 1px 3px;
+    text-decoration: none;
+}
+ul {
+    width: 200px;
+    margin: 150px;
+    list-style-type: none;
+    float: left;
+    position: fixed;
+    top: -140px;
+    width: 150px;
+    border-radius: 10px;
+    height: 4cm;
+    font-size: large;
+    background-color: grey;
+    overflow: auto;
+}
+.logo img {
+    width: 150px;
+    border-radius: 10px;
+}
+li a:hover {
+    background-color: #555;
+    color: white;
+  }
