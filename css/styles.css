@@ -66,13 +66,15 @@ h3 {
     color: #333;
 }
 .Home p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    color: #666;
+    padding: 1rem 0;
 }
 section {
     min-height: 100vh;
     position: relative;
-    top: -400px; left: -140px;
+    top: -400px; left: -20px;
     margin-left: -50px;
 }
 .Home {
@@ -89,6 +91,16 @@ section {
 }
 .home .content {
     flex: 1 1 39rem;
+}
+.btn {
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 4rem;
+    margin-top: 1rem;
+    background: none;
+    color: #555;
+    cursor: pointer;
+    border: 1rem solid var(--yellow);
 }
 
 
