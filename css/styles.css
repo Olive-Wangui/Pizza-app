@@ -1,23 +1,31 @@
 li a {
-    display: block;
     width: 90px;
     color: red;
-    padding: 1px 3px;
     text-decoration: none;
+    text-align: center;
+}
+li {
+    list-style: none;
+    display: inline;
+}
+a {
+    background-color: #dddddd;
+    display: block;
 }
 ul {
-    width: 200px;
-    margin: 150px;
+    width: 100%;
+    margin: 0px;
     list-style-type: none;
     float: left;
     position: fixed;
-    top: -140px;
-    width: 150px;
-    border-radius: 10px;
+    top: 0; left: 0;
     height: 4cm;
     font-size: large;
-    background-color: grey;
     overflow: auto;
+    z-index: 1000;
+    padding: 1.5rem 10%;
+    display: flex;
+    justify-content: space-between;
 }
 .logo img {
     width: 150px;
@@ -26,4 +34,20 @@ ul {
 li a:hover {
     background-color: #555;
     color: white;
-  }
+}
+.active li {
+    color: white;
+}
+html {
+    font-size: 63%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+    width: 1.4cm;
+}
+html::-webkit-scrollbar-track {
+    background: #333;
+}
+htmk::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+}
