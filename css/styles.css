@@ -1,3 +1,6 @@
+:root {
+    --yellow: yellow;
+} 
 li a {
     width: 90px;
     color: red;
@@ -14,11 +17,11 @@ a {
 }
 ul {
     width: 100%;
-    margin: 0px;
+    margin: 30px;
     list-style-type: none;
     float: left;
     position: fixed;
-    top: 0; left: 0;
+    top: 0; left: 50px;
     height: 4cm;
     font-size: large;
     overflow: auto;
@@ -32,10 +35,10 @@ ul {
     border-radius: 10px;
 }
 li a:hover {
-    background-color: #555;
+    background-color: #333;
     color: white;
 }
-.active li {
+li a.active {
     color: white;
 }
 html {
@@ -43,11 +46,134 @@ html {
     overflow-x: hidden;
 }
 html::-webkit-scrollbar {
-    width: 1.4cm;
+    width: 1.4rem;
 }
 html::-webkit-scrollbar-track {
     background: #333;
 }
-htmk::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
     background: var(--yellow);
+}
+body {
+    overflow-x: hidden;
+}
+header #menu-bar {
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+        overflow-x: hidden;
+    }
+    header #menu-bar {
+        display: block;
+        font-size: 30px;
+    }
+    .navbar {
+        position: fixed;
+        top: 3rem; left: 0;
+        width: 100%;
+        border-top: 2rem solid rgba(0,0,0,.1);
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+    ul {
+        flex-flow: column
+        padding 2rem;
+    }
+    li {
+        margin: 1.5rem;
+        width: 100%;
+    }
+    li a {
+        display: block;
+        color: goldenrod;
+        padding-left: 10px;
+        border-left: 2rem solid palevioletred;
+        font-size: 2rem;
+    }
+    li a:hover,
+    li a.active {
+        color: purple;
+        border-color: rebeccapurple;
+    }
+    .logo img {
+        width: 100px;
+    }   
 }
