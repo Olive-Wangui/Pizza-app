@@ -95,12 +95,23 @@ section {
 .btn {
     font-size: 1rem;
     padding: 1.5rem 2rem;
-    border-radius: 4rem;
+    border-radius: 8rem;
     margin-top: 1rem;
     background: none;
     color: #555;
     cursor: pointer;
-    border: 1rem solid var(--yellow);
+    border: 0.5rem solid var(--yellow);
+}
+.home::before,
+.home::after {
+    content:'';
+    position: absolute;
+    top: 5rem; right: -6rem;
+    border-radius: 3rem;
+    transform: rotate(-45deg);
+    height: 40rem;
+    width: 70rem;
+    z-index: -2;
 }
 
 
