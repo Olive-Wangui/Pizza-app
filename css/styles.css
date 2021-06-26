@@ -60,7 +60,7 @@ header #menu-bar {
     cursor: pointer;
     display: none;
 }
-h3 {
+.content h3 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 6rem;
     color: #333;
@@ -86,11 +86,12 @@ section {
     z-index: 0;
     overflow: hidden;
 }
-.home img {
-    flex: 1 1 39rem;
+.image img {
+    position: relative;
+    bottom: -9rem;
 }
 .home .content {
-    flex: 1 1 39rem;
+    text-align: center;
 }
 .btn {
     font-size: 1rem;
@@ -102,18 +103,6 @@ section {
     cursor: pointer;
     border: 0.5rem solid var(--yellow);
 }
-.home::before,
-.home::after {
-    content:'';
-    position: absolute;
-    top: 5rem; right: -6rem;
-    border-radius: 3rem;
-    transform: rotate(-45deg);
-    height: 40rem;
-    width: 70rem;
-    z-index: -2;
-}
-
 
 
 
@@ -233,5 +222,25 @@ section {
         transform: scaleY(1);
         opacity: 1;
         margin-top: -50px;
+    }
+    .home .content {
+        text-align: center;
+    }
+    .content h3 {
+        font-size: 4.5rem;
+    }
+    section {
+        position: relative;
+        top: -250px; left: 40px;
+    }
+    .content {
+        text-align: center;
+    }
+    .content p {
+        font-size: 3rem;
+    }
+    .image img {
+        position: relative;
+        top: -5px;
     }
 }
