@@ -193,6 +193,19 @@ section {
     width: 100%;
     object-fit: cover;
 }
+.Prices .box-container .box h3 {
+    color: purple;
+    font-size: 3rem;
+    font-family: 'Jomhuria', cursive;
+    font-weight: normal;
+}
+.Prices .heading {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 4rem;
+}
 
 
 
