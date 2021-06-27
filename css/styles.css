@@ -263,7 +263,11 @@ section {
     font-style: inherit;
     font-size: 5rem;
 }
-
+.Contact .box {
+    position: relative;
+    top: -450px; left: 50px;
+    color: black;
+}
 
 
 
