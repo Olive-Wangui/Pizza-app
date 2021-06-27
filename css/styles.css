@@ -144,7 +144,7 @@ section {
     margin: 2rem;
     cursor: pointer;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 }
 .Gallery .box-container .box img {
     height: 100%;
@@ -167,9 +167,32 @@ section {
     font-weight: bold;
 }
 .Prices {
-    
+    background: linear-gradient(rgba(255,255,255,.7), rgba(156, 84, 84, 0.7)) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-right: -50px;
+}
+.Prices .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Prices .box-container .box {
+    background: papayawhip;
+    width: 35rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0, .3rem .5rem rgba(0,0,0,.2);
+    text-align: center;
 }
 
+.Prices .box-container .box img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
