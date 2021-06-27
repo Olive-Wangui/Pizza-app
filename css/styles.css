@@ -231,28 +231,9 @@ section {
     height: 50%;
     width: 50%;
 }
-.Order .row form {
-    flex: 1 1 60%;
+.Order .form-group {
     background: papayawhip;
-    padding: 50px;
-    margin: 50px;
-    box-sizing: border-box;
-}
-.Order .row form .box {
-    padding: 12px 20px;
-    margin: 1.5rem 0;
-    font-size: 25px;
-    color: rebeccapurple;
-    text-transform: none;
-    background: paleturquoise;
-    width: 100%;
-    text-align: center;
-    border-radius: 4px;
-
-}
-.Order .row form .address {
-    resize: none;
-    height: 12rem;
+    padding: 2rem;
 }
 .Order h1 {
     font-weight: bolder;
@@ -263,9 +244,17 @@ section {
     font-style: inherit;
     font-size: 5rem;
 }
+.Order .order-summary h1 {
+    position: relative;
+    top: -50px;
+}
+.Order .order-summary h2 {
+    position: relative;
+    top: -50px;
+}
 .Contact .box {
     position: relative;
-    top: -450px; left: 50px;
+    top: -300px; left: 50px;
     color: black;
 }
 

@@ -184,17 +184,74 @@
 
     <section class="Order" id="order">
       <h1 class="heading"> Make an <span>order</span> </h1>
-      <div class="row">
-        <form action="">
-          <div style="background-image: url('images/gce5X8G6i.jpg');">
-            <input type="text" placeholder="name" class="box">
-            <input type="email" placeholder="email" class="box">
-            <input type="number" placeholder="number eg. 0712.." class="box">
-            <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address"></textarea>
-            <input type="submit" value="order now" class="btn">
-        </form> 
-      </div>
-    </section>
+      <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 order-overlay text-center">
+            <form class="col-sm-6 offset-sm-3 text-center">
+                <label>Pick your pizza Flavour:</label>
+                <select class="custom-select custom-select-md mb-3 flavour" required>
+                    <option value="pepperoni">Pepperoni Pizza</option>
+                    <option value="Bacon-sausage-pinapple-pepper">Bacon-sausage-pinapple-pepper</option>
+                    <option value="bacon & caramelized">Bacon-and-Caramelized-Bacon</option>
+                    <option value="italian sausage and pep">Italian Sausage and Pepperoni</option>
+                    <option value="boerewors">Boerewors</option>
+                    <option value="hawaiian">Hawaiian</option>
+                    <option value="mushroom">Chicken and Mushroom</option>
+                    <option value="regina">Regina Pizza</option>
+                </select>
+                <br> <hr>
+                <label>Chose your preferred Size:</label>
+                <select class="custom-select custom-select-md mb-3" id="size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <br> <hr>
+                <label for="crust">Choose your favorite Crust:</label>
+                <select class="custom-select custom-select-md mb-3" id="crust" required>
+                    <option value="thin">Thin Crust @ Ksh. 100</option>
+                    <option value="thick">Thick Crust @ Ksh. 150</option>
+                    <option value="flatbread">FlatBread Crust @ sh. 180</option>
+                    <option value="custom">Custom Crust @ sh. 280</option>
+                </select>
+                <br> <hr>
+                <label>Select Your favourite Toppings</label>
+                <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                    <option value="mushroom">Mushrooms @ sh. 80</option>
+                    <option value="onions">Onions @ sh. 80</option>
+                    <option value="sausage">Sausage @ sh. 80</option>
+                    <option value="greenpepper">Green Pepper @ sh. 80</option>
+                    <option value=""></option>
+                    <option value="olives">Olives @ sh. 120</option>
+                    <option value="pineapple">Pineapple @ sh. 120</option>
+                    <option value="sweetcorn">Sweet Corn @ sh. 120</option>
+                    <option value="bacon">Bacon @ sh. 120</option>
+                    <option value="mince">Mince @ sh. 120</option>
+                    <option value=""></option>
+                    <option value="beef">Beef Peperoni @ sh. 170</option>
+                    <option value="chicken">Periperi Chicken @ sh. 170</option>
+                </select>
+                <br>  <hr>
+                <label for="number">Number of Pizza's</label>
+                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+
+            </form>
+            <a href="#summary">
+              <button type="submit" class="btn btn-success checkout" id="checkout">
+                  Checkout
+              </button>
+          </a>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+<div class="order-summary" id="sum-order">
+    <h1 class="text-center" id="summary">Order Summary</h1>
+    <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+    <ol id="list" class="text-center sum">
+    </ol>
+  </section>
 
     <div class="Contact" id="contact">
       <div class="box-container">
