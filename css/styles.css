@@ -112,10 +112,28 @@ section {
     flex-wrap: wrap;
 }
 .About .image {
-    flex: 1 1 40rem;
-    height: 50rem;
-    background: url('images/about.jpg');
+    background-size: cover;
+    height: 35rem;
+    background-position: cover;
+    background-blend-mode: screen;
+    position: relative;
+    top: -200px; right: -80px;
 }
+.About .content h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: green;
+    text-align: center;
+}
+.About .content p {
+    font-family: 'Oswald', sans-serif;
+    color: blueviolet;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    padding-left: 1px;
+    padding-right: 55px;
+}
+
 
 
 
@@ -254,5 +272,17 @@ section {
     .image img {
         position: relative;
         top: -5px;
+    }
+    .About .image {
+        position: relative;
+        top: -50px; right: -10px;
+        width: 100%;
+        height: 50rem;
+    }
+    .About .content p {
+        font-size: large;
+        padding-right: 20px;
+        padding-left: 25px;
+
     }
 }
