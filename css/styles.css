@@ -217,9 +217,52 @@ section {
     transform: scale(1.02);
     box-shadow: 0, 1rem 1rem rgba(0,0,0,.2);
 }
+.Order .row {
+    background: whitesmoke;
+    display: flex;
+    margin: 10rem 0;
+    overflow: hidden;
+    box-shadow: 0, .5rem 1rem rgba(0,0,0,.5);
+}
+.Order background-image {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 50%;
+    width: 50%;
+}
+.Order .row form {
+    flex: 1 1 60%;
+    background: papayawhip;
+    padding: 50px;
+    margin: 50px;
+    box-sizing: border-box;
+}
+.Order .row form .box {
+    padding: 12px 20px;
+    margin: 1.5rem 0;
+    font-size: 25px;
+    color: rebeccapurple;
+    text-transform: none;
+    background: paleturquoise;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
 
-
-
+}
+.Order .row form .address {
+    resize: none;
+    height: 12rem;
+}
+.Order h1 {
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    bottom: -70px;
+    color: black;
+    font-style: inherit;
+    font-size: 5rem;
+}
 
 
 
