@@ -96,7 +96,7 @@ section {
     text-align: center;
 }
 .btn {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 1.5rem 2rem;
     border-radius: 8rem;
     margin-top: 1rem;
@@ -104,6 +104,9 @@ section {
     color: #555;
     cursor: pointer;
     border: 0.5rem solid var(--yellow);
+}
+.btn:hover {
+    background: hotpink;
 }
 .About {
     display: flex;
@@ -206,8 +209,14 @@ section {
     font-style: oblique;
     font-size: 4rem;
 }
-
-
+.Prices .box-container .box .price {
+    color: black;
+    font-size: 2rem;
+}
+.Prices .box-container .box:hover {
+    transform: scale(1.02);
+    box-shadow: 0, 1rem 1rem rgba(0,0,0,.2);
+}
 
 
 
@@ -357,4 +366,12 @@ section {
         padding-left: 25px;
 
     }
+    .Prices .box-container .box:hover {
+        transform: scale(1.05);
+        box-shadow: 0, 1rem 1rem rgba(0,0,0,.2);
+    }
+    section {
+        padding: 1rem, 5%;
+        padding-top: 8.5rem;
+    }   
 }
