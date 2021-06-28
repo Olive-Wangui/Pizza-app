@@ -6,7 +6,7 @@ Olive Wangui
 Pizza-My-Heart
 
 ## Description
-This project concerns recreating frictional studio for Delani studio to suit the user's needs.
+This application app basically enables a user to order different sizes of pizzas with one or more topppings of their own liking.
 
 ## Setup instructions
 -'git clone https://github.com/Olive-Wangui/Pizza-app.git' -cd -code. or visual studio code. based on the text editor you have.
