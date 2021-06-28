@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 //Get inputs
 $("#checkout").click(function () {
-    let flavour = $(".flavour option:selected").val();
+    let flavour = $("#flavour option:selected").val();
     let size = $("#size option:selected").val();
     let crust = $("#crust option:selected").val();
     let topping = $("#toppings option:selected").val();
@@ -383,6 +383,39 @@ $("#checkout").click(function () {
      let newOrder = order(flavour, size, crust, topping, number, totalPrice);
      console.log(newOrder); // test function
 
+     let topping_value = ptopping.length*100;
+     console.log("topping value" + topping_value);
+
+     if((psize == "0") && (pcrust == "0")){
+         console.log("nothing selected");
+         $("button.checkout").show();
+         $("#information").show();
+         $("div.choice").hide();
+         alert("Please select the pizza size and crust");
+     }
+     else{
+         $("button.checkout").hide();
+         $("#information").hide();
+         $("div.choice").slideDown(1000);
+     }
+
+     total = price + crust_price + topping_value;
+     console.log(total);
+     let checkoutTotal = 0;
+     checkoutTotal = checkoutTotal + total;
+
+     //checkout button
+     $("button#checkout").click(function(){
+        $("button#checkout").hide();
+        $("button.addPizza").hide();
+        $("button.deliver").slideDown(1000);
+        $("#addedPrice").slideDown(1000);
+        console.log("Your total order bill is sh. " + checkoutTotal);
+        $("#pizzaTotal").append("Your total order bill is sh. " + checkoutTotal);
+     });
+
+     //
+
      //create a new object
      // let myOrder = JSON.stringify(JSON.parse(newOrder));
 
@@ -410,12 +443,15 @@ $("#checkout").click(function () {
      $('.deliver').hide(1000);
      $('.delivernot').hide(1000);
      $('.cdata-overlay').slideDown();
+     let deliveryamount = checkoutTotal+100;
+     console.log("You will pay sh. "+deliveryamount+" on delivery");
+     $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
  });
 
 
  //Pick Up
  $(".delivernot").click(function () {
-
+     
  });
 
  //Scrollify
