@@ -381,7 +381,7 @@ $("#checkout").click(function () {
 
      //Execute order function
      let newOrder = order(flavour, size, crust, topping, number, totalPrice);
-     console.log(newOrder); // test func
+     console.log(newOrder); // test function
 
      //create a new object
      // let myOrder = JSON.stringify(JSON.parse(newOrder));
