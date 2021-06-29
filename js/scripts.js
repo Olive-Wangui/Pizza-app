@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 $(function() {
     $('.summary').hide();
-    $('.cdata-overlay').hide();
+    $('.cdata-overlay').show();
     //Get inputs
     $("#checkout").click(function() {
         let flavour = $(".flavour option:selected").val();
@@ -371,7 +371,7 @@ $(function() {
 
         //Execute order function
         let newOrder = order(flavour, size, crust, topping, number, totalPrice);
-        console.log(newOrder);
+        console.log(newOrder); //test func
 
         //create a new object
         //let myOrder = JSON.stringify(JSON.parse(newOrder));
@@ -411,7 +411,7 @@ $(function() {
         $(function(){
             $.scrollify.move('.sum-order');
         });
-        $("#go").click(function(){
+        $("#go").click(function() {
             let location = $("input#location").val();
             console.log(location);
         });
